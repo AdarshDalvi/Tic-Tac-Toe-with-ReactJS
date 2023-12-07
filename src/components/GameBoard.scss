@@ -1,0 +1,15 @@
+.game-board {
+    gap: 2rem;
+    display: grid;
+    grid-template: repeat(3, minmax(auto, 8rem)) / repeat(3, minmax(auto, 8rem));
+
+    button {
+        border: none;
+        background: #aca788;
+        color: #3f3b00;
+        font-size: 5rem;
+        cursor: pointer;
+        font-family: 'Caprasimo', cursive;
+        padding: 1rem;
+    }
+}

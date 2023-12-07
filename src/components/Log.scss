@@ -1,0 +1,35 @@
+.log-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    height: 200px;
+    max-width: 45rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+
+    .log-card {
+        text-align: center;
+        background-color: rgba(255, 243, 243, 0.7);
+        color: black;
+        font-size: 0.8rem;
+        border: 1px solid white;
+        border-radius: 4px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        padding: 0.1rem 1rem;
+        animation: slide-in-from-left 1s cubic-bezier(0.075, 0.82, 0.165, 1)
+            forwards;
+    }
+
+    @keyframes slide-in-from-left {
+        0% {
+            opacity: 0;
+            transform: translateX(-30%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
